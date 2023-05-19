@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from personas.models import Registro
 
-from personas.models import Persona
-admin.site.register(Persona)
+# Register your models here.
+admin.site.register(Registro)

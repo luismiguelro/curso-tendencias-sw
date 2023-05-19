@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiantes - Proyecto Final (Luis/Laura)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <style>
+    /* Estilos para el modo oscuro */
+    body.dark-mode {
+      background-color: #1e1e2f;
+      color: #eaeaea;
+    }
+
+    .jumbotron.dark-mode {
+      background-color: #2d2d4d;
+      color: #eaeaea;
+    }
+
+    .nav-link.dark-mode {
+      color: #eaeaea;
+    }
+
+    .card.dark-mode {
+      background-color: #2d2d4d;
+      color: #eaeaea;
+    }
+
+    .btn-primary.dark-mode {
+      background-color: #8134af;
+      border-color: #8134af;
+    }
+
+    footer.dark-mode {
+      background-color: #1e1e2f;
+      color: #6c6c8c;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mr-2 " href="{% url 'inicio' %}">Estudiantes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'inicio' %}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'persona_list' %}" >Listar Personas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid dark-mode">
+    <div class="container">
+      <h1 class="display-4">Bienvenidos a Estudiantes</h1>
+      <p class="lead">Una plataforma diseñada para estudiantes que buscan recursos, consejos y herramientas para tener éxito en sus estudios.</p>
+      <a href="/registro" class="btn btn-primary btn-lg mb-4">Regístrate</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 dark-mode">
+          <img src="https://img.freepik.com/vector-gratis/reclutadores-gerentes-que-buscan-candidatos-gran-cv-puesto-agencia-contratacion-servicio-recursos-humanos-ilustracion-concepto-red-contratacion_335657-2059.jpg" class="card-img-top" alt="Recursos gratuitos">
+          <div class="card-body">
+            <h4 class="card-title">Recursos gratuitos</h4>
+            <p class="card-text">Accede a una gran variedad de recursos gratuitos para mejorar tus habilidades de estudio, incluyendo videos, podcasts, artículos y más.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 dark-mode">
+          <img src="https://as01.epimg.net/meristation/imagenes/2022/02/08/betech/1644347527_287952_1644347603_noticia_normal_recorte1.jpg" class="card-img-top" alt="Consejos y trucos">
+          <div class="card-body">
+            <h4 class="card-title">Consejos y trucos</h4>
+            <p class="card-text">Aprende consejos y trucos de otros estudiantes y expertos para mejorar tu rendimiento académico y lograr tus objetivos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 dark-mode">
+          <img src="https://www.startupguys.net/wp-content/uploads/2021/12/a-woman-connecting-a-phone-to-the-laptop.jpeg" class="card-img-top" alt="Herramientas útiles">
+          <div class="card-body">
+            <h4 class="card-title">Herramientas útiles</h4>
+            <p class="card-text">Descubre herramientas útiles y tecnologías que pueden ayudarte a organizarte mejor, estudiar de manera más eficiente y gestionar tu tiempo de manera más efectiva.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center">Únete a nuestra comunidad de estudiantes</h2>
+        <p class="text-center">Regístrate ahora y comienza a aprovechar todos los recursos, consejos y herramientas que tenemos disponibles para ti.</p>
+        <div class="text-center">
+          <a href="/registro" class="btn btn-primary btn-lg mb-4">Regístrate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-5 bg-light dark-mode">
+    <div class="container">
+      <p class="m-0 text-center">&copy; 2023 Estudiantes - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+

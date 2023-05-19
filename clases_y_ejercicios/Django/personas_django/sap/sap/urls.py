@@ -1,28 +1,15 @@
-"""
-URL configuration for sap project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
 
-from webapp.views import bienvenido, despedirse,inicio,contacto
+from webapp.views import editar, despedirse, inicio, registro, persona_list, persona_register,editar,eliminar
 
 urlpatterns = [
-    path('',inicio),
+    path('',inicio, name="inicio"),
     path('admin/', admin.site.urls),
-    path('bienvenido/',bienvenido),
-    path('contacto/',contacto),
+    path('registro/', persona_register, name='registro'),
+    path('personas/', persona_list, name='persona_list'),
+    path('editar/<int:id>/', editar, name='editar_persona'),
+    path('eliminar/<int:id>/', eliminar, name='eliminar_persona'),
     path('despedida/',despedirse),
+
 ]
