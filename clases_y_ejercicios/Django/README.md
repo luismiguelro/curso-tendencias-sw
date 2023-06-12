@@ -4,7 +4,7 @@
 	<img src="https://www.redttu.edu.co/es/wp-content/uploads/2015/12/16.-TDEA.png" alt="Logo Platzi" width="250px" align="right"/>
 </a>
 
-Este es el Proyecto Final del Curso de Construcción de Software IV en el Tecnológico de Antioquia
+Este es el Proyecto Final del Curso de Tendencias en Desarrollo de SW en el Tecnológico de Antioquia
 
 ## Objetivos del Proyecto 🎯
 Este es un proyecto de ejemplo que muestra cómo crear un CRUD (Create, Read, Update, Delete) utilizando Python, el framework Django y la base de datos PostgreSQL. El objetivo de este proyecto es proporcionar una base sólida para desarrollar aplicaciones web con capacidades CRUD utilizando estas tecnologías.
